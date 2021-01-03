@@ -1,0 +1,92 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage{babel}
+\usepackage{bchart}
+\usepackage{xcolor}
+\usetheme{Warsaw}
+
+\title{Internet mobilny vs stacjonarny w Polsce}
+\author{Dawid Wydra}
+\date{\today}
+\begin{document}
+\maketitle
+%\tableofcontents
+%\begin{frame}
+%\tableofcontents
+%\end{frame}%spis treści???
+
+\begin{frame}
+\frametitle{Różnice}
+Różnic pomiędzy internetem mobilnym, a stacjonarnym jest wiele. Najczęściej o wyborze konsumentów decydują jednak:
+\newline
+\begin{itemize}
+\item Dostęp do technologii
+\item Prędkość przesyłu danych
+\item Ilość transferu
+\item Potrzeba korzystania poza domem
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Dostęp do technologii}
+%W 2020 r. dostęp do internetu posiadało 90,4\% gospodarstw domowych.
+
+ \begin{bchart}[max=100, step=20, unit=\%]
+ \bcbar[text=Ogółem, color=gray]{90.4}
+ \bcbar[text=Stacjonarny, color=gray!80]{67.7}
+\bcbar[text=Mobilny, color=gray!60]{66.7}
+ \bcxlabel{Dostęp do internetu w 2020 roku w Polsce\footnote {Na podstawie danych GUS - październik 2020}}
+  \end{bchart}
+\newline
+\newline
+Pomimo tego, że sieci światłowodowe są bez przerwy rozwijane, wciąż dostęp do tej technologii w Polsce ma ograniczona ilość osób. W grudniu 2019 roku możliwość założenia sieci światłowodowej w gospodarstwie domowym miało milion Polaków. Z tego powodu spora część mieszkańców zmuszona jest do wybrania internetu mobilnego.
+\end{frame}
+
+\begin{frame}
+\frametitle{Prędkość internetu w Polsce}
+
+\begin{table}
+\caption{Prędkość internetu stacjonarnego\footnote {Na podstawie testów wykonanych za pomocą aplikacji web strony Speedtest.pl - ranking czerwiec 2020.}}
+\label{tab:Prędkość internetu stacjonarnego}
+\begin{center}
+\begin{tabular}{|c|l|l|l|l|}
+\hline Nr&Dostawca&Pobieranie [Mb/s]& Wysyłanie [Mb/s]& Ping [ms]\\ \hline \hline
+1 & INEA & 146,88 & 148,84 & 11 \\
+2 & UPC & 138,6 & 20,42 & 18 \\
+3 & TOYA & 123,55 & 30,34 & 13 \\
+4 & Vectra & 106,14 & 26,43 & 19 \\
+5 & Orange & 69,16 & 24,74 & 28 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+ Z pomiarów wynika, że średnia prędkość Internetu w Polsce dla łączy stacjonarnych wyniosła 72,02 Mb/s.
+\end{frame}
+
+\begin{frame}
+\frametitle{Prędkość internetu w Polsce}
+
+\begin{table}
+\caption{Prędkość internetu mobilnego\footnote {Na podstawie wyników testów w sieciach 3G i LTE wykonanych przez użytkowników aplikacji mobilnych strony Speedtest.pl - ranking czerwiec 2020.}}
+\label{tab:Prędkość internetu stacjonarnego}
+\begin{center}
+\begin{tabular}{|c|l|l|l|l|}
+\hline Nr & Dostawca & Pobieranie [Mb/s] & Wysyłanie [Mb/s] & Ping [ms]\\ \hline \hline
+1 & T-Mobile & 31,08 & 8,16 & 34 \\
+2 & Orange & 28,24 & 8,38 & 32 \\
+3 & Play & 22,92 & 7,54 & 38 \\
+4 & Plus & 22 & 7,92 & 42 \\\hline
+\end{tabular}
+\end{center}
+\end{table}
+ Z pomiarów wynika, że średnia prędkość pobierania danych w polskich sieciach mobilnych wyniosła 25,62 Mb/s.
+\end{frame}
+
+\begin{frame}{Pakiety danych}
+    
+\end{frame}
+
+
+
+\end{document}
